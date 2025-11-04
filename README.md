@@ -62,10 +62,10 @@ The site is deployed on Vercel and automatically updates with each push to the m
 
 ## Contact
 
-- **Email:** swagatsaswatchand@gmail.com
-- **GitHub:** [swagatchand98](https://github.com/swagatchand98)
-- **LinkedIn:** [swagatchand](https://linkedin.com/in/swagatchand)
+- **Email:** satyamyadavansi74@gmail.com
+- **GitHub:** [satyamyadav630](https://github.com/satyamyadav630)
+- **LinkedIn:** [satyamyadav](https://linkedin.com/in/satyam-yadav-19bbb32a1)
 
 ---
 
-Built with ❤️ by Swagat Chand
+Built with ❤️ by Satyam Yadav

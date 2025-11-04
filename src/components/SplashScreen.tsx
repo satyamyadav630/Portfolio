@@ -45,7 +45,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
           className="text-2xl font-light text-white tracking-wider"
           style={{ fontFamily: 'var(--font-opening-hours, sans-serif)' }}
         >
-          Swagat Chand
+          Satyam Yadav
         </motion.h1>
       </motion.div> */}
 

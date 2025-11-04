@@ -17,57 +17,54 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Thesco",
+    name: "BookMyDoc",
     description:
-      "Modern, responsive landing page for import-export company featuring smooth Framer Motion animations, optimized SEO performance, integrated contact forms, and professional design showcasing company services and global trade capabilities.",
-    tech: ["Next.js", "Framer Motion", "Tailwind", "Nodemailer"],
+      "Modern, responsive website for booking a appoitment of doctor form home and by this there we can book a doctor in our busy schedule.",
+    tech: ["React.js", "Framer Motion","Razorpay", "Tailwind", "cloudnary"],
     color: "#ffffff",
-    github: "https://github.com/swagatchand98/Thesco-web",
-    live: "https://thesco.vercel.app",
+    github: "https://github.com/satyamyadav630/BookMyDoc",
     details: [
-      "Landing page project for import and export company made with Next.js for optimal performance and SEO.",
-      "Implemented smooth, engaging animations using Framer Motion for enhanced user experience.",
-      "Designed responsive layout with Tailwind CSS ensuring perfect display across all devices.",
-      "Integrated contact forms with Nodemailer for efficient lead generation and client communication.",
+      "Developed a full-stack doctor appointment platform using the MERN stack with role-based access for Patient, Doctor, and Admin",
+      "Applied secure authentication and authorization for all user types using JWT and bcrypt.",
+      "Built patient module to search and filter doctors based on symptoms/medical issues and book appointments with preferred time slots.",
+      "Integrated online payment option to confirm and book appointments securely.",
     ],
   },
   {
-    name: "Web3-Dropbox",
+    name: "DoorStep",
     description:
-      "Decentralized cloud storage marketplace where providers monetize unused space through cryptocurrency. Built with IPFS for distributed storage, Web3 wallet integration, and modern Three.js visualizations for enhanced user experience.",
-    tech: ["Next.js", "Ethers.js", "IPFS", "Hardhat", "Three.js", "RainbowKit"],
+      "Modern, responsive website for a Home service by this we provide a home service while booking at you appropiat time .",
+    tech: ["React.js", "Tailwind", "Mongodb", "Motion", "Three.js,"],
     color: "#ffffff",
-    github: "https://github.com/swagatchand98/web3-dropbox",
-    live: "https://web3-dropbox.vercel.app",
+    github: "https://github.com/satyamyadav630/Doorstep",
     details: [
-      "Built a decentralized cloud storage marketplace where providers rent out unused space and earn crypto, while users securely upload data.",
-      "Integrated Web3 payments and wallet authentication using Ethers.js, WAGMI, Hardhat, and RainbowKit SDK.",
-      "Leveraged IPFS + Helia for distributed storage and retrieval, ensuring censorship resistance and fault-tolerance.",
-      "Developed a responsive Next.js + Tailwind frontend with Three.js visualizations and optimized data handling via TanStack Query.",
+      "Developed a responsive DoorStep Home Service website enabling users to book home cleaning, salon, and repair services online.",
+      "Implemented category-based service cards with smooth horizontal scrolling and modern UI using React and Tailwind CSS.",
+      "Integrated dynamic components for a seamless user experience with drag-to-scroll and hover animations.",
+      "Focused on user convenience, verified professionals, and a clean, mobile-friendly design for better accessibility.",
     ],
   },
   {
-    name: "Selzo",
+    name: "Digitonic",
     description:
-      "AI-powered SaaS platform enabling small businesses to create and manage automated WhatsApp bots. Features intelligent product uploads, automated customer responses, subscription management, and comprehensive analytics dashboard for business growth.",
-    tech: ["Next.js", "Node.js", "WhatsApp API", "AI", "Razorpay", "Stripe"],
+      "Focused on user convenience, verified professionals, and a clean, mobile-friendly design for better accessibility.",
+    tech: ["Next.js", "Node.js","Motion","Tailwid","CSS"],
     color: "#ffffff",
-    github: "https://github.com/swagatchand98/selzo-web",
-    live: "https://selzo.vercel.app",
+    github: "https://github.com/satyamyadav630/Digitonic",
     details: [
-      "Built a SaaS platform using Next.js, Node.js, and WhatsApp Cloud API that enables SMBs to auto-create and manage personalized WhatsApp bots.",
-      "Features product uploads, AI-driven replies, and seamless customer interaction automation.",
-      "Integrated Razorpay/Stripe payment systems for subscription management and transaction processing.",
-      "Developed intuitive dashboard for bot customization, analytics, and performance monitoring.",
+     "Designed modern UI/UX components to highlight service categories such as projects, internships, and corporate training programs.",
+      "Optimized website performance through asset minification, caching, and efficient component rendering.",
+     "Applied clean code practices and maintained the project using Git and GitHub for version control.",
+"Researched and adopted emerging frontend trends and tools to ensure scalability and industry-standard performance.",
     ],
   },
   {
-    name: "CareConnect",
+    name: "Flat4You",
     description:
       "Full-stack service marketplace connecting users with service providers. Features real-time chat, secure payments, multi-role authentication, and comprehensive admin dashboard for seamless service management and booking experience.",
     tech: [
-      "Next.js",
-      "TypeScript",
+      "React.js",
+      "Cloudaniry",
       "Node.js",
       "MongoDB",
       "Firebase",
@@ -75,13 +72,12 @@ const projects: Project[] = [
       "Stripe",
     ],
     color: "#ffffff",
-    github: "https://careconnect-links.carrd.co",
-    live: "https://careconnect-links.carrd.co",
+    github: "https://github.com/satyamyadav630/Flate4You",
     details: [
-      "Built a full-stack service marketplace (Urban Company–like) with roles for User, Provider, and Admin using Next.js, TypeScript, Node.js (Express), and MongoDB/Firestore.",
-      "Implemented hybrid authentication (Firebase + JWT) and advanced security measures (bcrypt, CORS, Helmet, mongo-sanitize, rate limiting).",
-      "Integrated real-time chat (WebSocket) and Stripe payments, enhancing user engagement and transaction reliability.",
-      "Designed scalable image/file storage with AWS S3, multer-s3, and AWS SDK, and deployed on AWS EC2 ensuring 99.9% uptime.",
+      "Developed a full-stack web application that helps university and college students find nearby rental flats and rooms.",
+      "Applied a secure user authentication and registration system enabling students to book flats online.",
+      "Built an admin dashboard for uploading property details, images, pricing, and managing availability and payments.",
+      "Built backend REST APIs for booking, payment processing, and database operations with secure architecture.",
     ],
   },
 ];
@@ -324,14 +320,18 @@ export default function InteractiveProjects({
                 <group position={[0, -0.55, 0]}>
                   {/* GitHub Button */}
                   <group position={[0, 0, 0]}>
-                    <mesh 
+                    <mesh
                       position={[0.25, 0, -0.01]}
                       onClick={(e) => {
                         e.stopPropagation();
-                        window.open(project.github, '_blank');
+                        window.open(project.github, "_blank");
                       }}
-                      onPointerOver={() => document.body.style.cursor = 'pointer'}
-                      onPointerOut={() => document.body.style.cursor = 'default'}
+                      onPointerOver={() =>
+                        (document.body.style.cursor = "pointer")
+                      }
+                      onPointerOut={() =>
+                        (document.body.style.cursor = "default")
+                      }
                     >
                       <planeGeometry args={[0.5, 0.15]} />
                       <meshBasicMaterial
@@ -356,14 +356,18 @@ export default function InteractiveProjects({
                   {/* Live Demo Button */}
                   {project.live && (
                     <group position={[0.6, 0, 0]}>
-                      <mesh 
+                      <mesh
                         position={[0.25, 0, -0.01]}
                         onClick={(e) => {
                           e.stopPropagation();
-                          window.open(project.live!, '_blank');
+                          window.open(project.live!, "_blank");
                         }}
-                        onPointerOver={() => document.body.style.cursor = 'pointer'}
-                        onPointerOut={() => document.body.style.cursor = 'default'}
+                        onPointerOver={() =>
+                          (document.body.style.cursor = "pointer")
+                        }
+                        onPointerOut={() =>
+                          (document.body.style.cursor = "default")
+                        }
                       >
                         <planeGeometry args={[0.5, 0.15]} />
                         <meshBasicMaterial

@@ -132,24 +132,24 @@ const experiences = [
 // Education data
 const education = [
   {
-    degree: "Bachelor of Computer Science",
-    institution: "Jain University Bangalore",
-    period: "2024 - 2028",
+    degree: "Bachelor of Computer Application",
+    institution: "Integral University Lucknow",
+    period: "2023 - 2026",
     description: "Specialized in Software Engineering and Web Development",
     achievements: [
-      "Participated and won multiple coding hackathons",
-      "Published research on web optimization"
+      
+      "9.2 CGPA in Bachelor of Computer Application"
     ],
     color: "#BB86FC",
     icon: "🎓"
   },
   {
     degree: "Higher Secondary Education",
-    institution: "OAV Bandupali",
+    institution: "Maharshi Dayanand Public School",
     period: "2023",
-    description: "Higher Secondary Education with focus on Science and Mathematics (PCMB)",
+    description: "Higher Secondary Education with (PCB)",
     achievements: [
-        "82% in Higher Secondary Board Exams"
+        "62% in Higher Secondary Board Exams"
     ],
     color: "#03DAC6",
     icon: "🎒"
@@ -158,11 +158,11 @@ const education = [
 
 // Contact data
 const contactInfo = {
-  email: "swagat@example.com",
+  email: "satyam@example.com",
   phone: "+1 (555) 123-4567",
   location: "San Francisco, CA",
-  linkedin: "linkedin.com/in/swagatchand",
-  github: "github.com/swagatchand98",
+  linkedin: "linkedin.com/in/satyamyadav",
+  github: "github.com/satyamyadav630",
   website: "swagatchand.dev"
 };
 
@@ -606,7 +606,7 @@ export default function ZScrollContent() {
           anchorY="middle"
           material-transparent={true}
         >
-          Swagat Chand
+          Satyam Yadav
           <FloatingParticles/>
         </Text>
 
@@ -894,26 +894,26 @@ export default function ZScrollContent() {
         </Text>
 
         {/* Minimal Experience Cards */}
-        {experiences.map((exp, index) => (
+        {/* {experiences.map((exp, index) => (
           <group 
             key={exp.title} 
             name={`experience-item-${index}`}
             position={[0, 1.5 - index * 2.2, 0]}
-          >
+          > */}
             {/* Glowing accent line */}
-            <mesh position={[-2, 0, 0]}>
+            {/* <mesh position={[-2, 0, 0]}>
               <planeGeometry args={[0.03, 2]} />
               <meshBasicMaterial color={exp.color} transparent={true} opacity={0.8} />
-            </mesh>
+            </mesh> */}
 
             {/* Icon background */}
-            <mesh position={[-2, 0.8, 0.01]}>
+            {/* <mesh position={[-2, 0.8, 0.01]}>
               <circleGeometry args={[0.2]} />
               <meshBasicMaterial color={exp.color} transparent={true} opacity={0.2} />
-            </mesh>
+            </mesh> */}
 
             {/* Icon */}
-            <Text
+            {/* <Text
               position={[-2, 0.8, 0.02]}
               fontSize={0.15}
               color={exp.color}
@@ -922,30 +922,30 @@ export default function ZScrollContent() {
               material-transparent={true}
             >
               {exp.icon}
-            </Text>
+            </Text> */}
 
             {/* Main content card - minimal glass effect */}
-            <mesh position={[0.65, 0, -0.01]}>
+            {/* <mesh position={[0.65, 0, -0.01]}>
               <planeGeometry args={isMobile ? [3.5, 2.4] : [4.5, 1.8]} />
               <meshBasicMaterial
                 color="#0A0A0A"
                 transparent={true}
                 opacity={0.4}
               />
-            </mesh>
+            </mesh> */}
 
             {/* Subtle border glow */}
-            <mesh position={[0.65, 0, -0.02]}>
+            {/* <mesh position={[0.65, 0, -0.02]}>
               <planeGeometry args={isMobile ? [3.55, 2.45] : [4.55, 1.85]} />
               <meshBasicMaterial
                 color={exp.color}
                 transparent={true}
                 opacity={0.1}
               />
-            </mesh>
+            </mesh> */}
 
             {/* Job title */}
-            <Text
+            {/* <Text
               position={[isMobile ? -0.8 : -1, 0.6, 0.1]}
               fontSize={0.14}
               color="#ffffff"
@@ -955,10 +955,10 @@ export default function ZScrollContent() {
               maxWidth={4}
             >
               {exp.title}
-            </Text>
+            </Text> */}
 
             {/* Company */}
-            <Text
+            {/* <Text
               position={[isMobile ? -0.8 : -1, 0.3, 0.1]}
               fontSize={0.1}
               color={exp.color}
@@ -968,10 +968,10 @@ export default function ZScrollContent() {
               maxWidth={4}
             >
               {exp.company}
-            </Text>
+            </Text> */}
 
             {/* Period */}
-            <Text
+            {/* <Text
               position={[isMobile ? -0.8 : -1, 0.05, 0.1]}
               fontSize={0.08}
               color="#888888"
@@ -981,10 +981,10 @@ export default function ZScrollContent() {
               maxWidth={4}
             >
               {exp.period}
-            </Text>
+            </Text> */}
 
             {/* Key highlights - condensed */}
-            <group position={[isMobile ? -0.8 :-1, -0.3, 0.1]}>
+            {/* <group position={[isMobile ? -0.8 :-1, -0.3, 0.1]}>
               {exp.achievements.slice(0, 3).map((achievement, achIndex) => (
                 <Text
                   key={achIndex}
@@ -1004,9 +1004,9 @@ export default function ZScrollContent() {
             </group>
 
             {/* Floating particles around experience card */}
-            <FloatingParticles/>
+            {/* <FloatingParticles/>
           </group>
-        ))}
+        ))} */} 
 
         {/* Ambient glow for experience section */}
         <pointLight
@@ -1236,12 +1236,12 @@ export default function ZScrollContent() {
               material-transparent={true}
               onClick={(e) => {
                 e.stopPropagation();
-                window.open('mailto:swagatsaswatchand@gmail.com', '_blank');
+                window.open('mailto:satyamyadavansi74@gmail.com', '_blank');
               }}
               onPointerOver={() => document.body.style.cursor = 'pointer'}
               onPointerOut={() => document.body.style.cursor = 'default'}
             >
-              swagatsaswatchand@gmail.com
+              satyamyadavansi74@gmail.com
             </Text>
           </group>
 
@@ -1266,12 +1266,12 @@ export default function ZScrollContent() {
               material-transparent={true}
               onClick={(e) => {
                 e.stopPropagation();
-                window.open('https://github.com/swagatchand98', '_blank');
+                window.open('https://github.com/satyam-yadav-19bbb32a1', '_blank');
               }}
               onPointerOver={() => document.body.style.cursor = 'pointer'}
               onPointerOut={() => document.body.style.cursor = 'default'}
             >
-              github.com/swagatchand98
+              github.com/satyamyadav630
             </Text>
           </group>
 
@@ -1296,12 +1296,12 @@ export default function ZScrollContent() {
               material-transparent={true}
               onClick={(e) => {
                 e.stopPropagation();
-                window.open('https://www.linkedin.com/in/swagat-chand-947a6b2ba/', '_blank');
+                window.open('https://www.linkedin.com/in/satyam-yadav-19bbb32a1/', '_blank');
               }}
               onPointerOver={() => document.body.style.cursor = 'pointer'}
               onPointerOut={() => document.body.style.cursor = 'default'}
             >
-              linkedin.com/in/swagat-chand
+              linkedin.com/in/satyam-yadav
             </Text>
           </group>
 
@@ -1325,7 +1325,7 @@ export default function ZScrollContent() {
               anchorY="middle"
               material-transparent={true}
             >
-              Bangalore, India
+              Lucknow, India
             </Text>
           </group>
         </group>
