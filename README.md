@@ -24,7 +24,7 @@ A modern, interactive 3D portfolio website built with Next.js and Three.js.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/swagatchand98/portfolio.git
+   git clone https://github.com/satyamyadav630/portfolio.git
    cd portfolio
    ```
 
